@@ -56,6 +56,7 @@ export const MesheryPlatformsWrapper = styled.div`
       }
       .installation-steps{
           flex-direction: column;
+          height: auto;
           text-align: center;
       }
       .step-2{

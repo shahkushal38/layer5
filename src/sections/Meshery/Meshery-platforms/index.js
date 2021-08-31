@@ -218,7 +218,7 @@ const MesheryPlatforms = () => {
             </Col>
           ))}
         </Row>
-        <Container style={{transition: "height 0.5s ease-in-out", height: installationStepsHeight, overflow: "hidden"}}>
+        <Container style={{transition: "height 0.5s ease-in-out", height: installationStepsHeight, overflow: "visible"}}>
           <Row className="installation-steps" >
             {currentPlatform.name && currentPlatform.steps}
           </Row>
