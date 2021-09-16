@@ -41,6 +41,7 @@ const TOCWrapper = styled.div`
   }
 
   .toc-sub-heading {
+    color:#000000;
     margin-top: 1rem;
     font-weight: 300;
     font-size: 1.15rem;
@@ -48,6 +49,17 @@ const TOCWrapper = styled.div`
   
   .toc-sub-inline{
     display: inline-block;
+  }
+
+  .active{
+    font-weight:500;
+    color: ${(props) => props.theme.secondaryColor};
+  }
+
+  ul{
+    display:flex;
+    flex-direction:column;
+    white-space: nowrap;
   }
 
   .toc-ul{
@@ -98,6 +110,11 @@ const TOCWrapper = styled.div`
     opacity:0;
     height:0;
     transition:none;
+    visibility:hidden;
+   }
+
+   .toc-ul-open{
+    visibility:visible;
    }
   }
 `;
